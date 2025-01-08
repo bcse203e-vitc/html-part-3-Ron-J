@@ -1,0 +1,130 @@
+<!-- Nested Table for Exam Schedule
+Create a table displaying an exam schedule:
+• Main table: Rows for dates and columns for time slots.
+• Nested tables inside each cell to list subjects and their corresponding durations.
+• Use different background colors for theoretical and practical exams.
+• Add a column indicating the total number of exams on each date -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+</head>
+<body>
+  <table border="1" cellspacing="2" cellpadding="2" align="center">
+        <caption><strong>Conference Timetable</strong></caption>
+
+        <thead>
+            <tr>
+		<th>Date\Time</th>
+                <th>10:00 - 11:30</th>
+                <th>12:00 - 1:30</th>
+                <th>2:00 - 3:30</th>
+                <th>4:00 - 5:30</th>
+		<th>Total Exams</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+		<td>12/1</td> 
+		<td style="background-color:#f2f29f">
+			<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+			<td>Physics</td>
+			<td>Chemistry</td>
+			<td>Biology</td>
+			</tr>
+			<tr>
+			<td>0.5 hours</td>
+			<td>0.5 hours</td>
+			<td>0.5 hours</td>
+			</tr>
+			</table>
+		</td>
+		<td></td>
+		<td style="background-color:#f29ff2">
+			<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+			<td>Probability</td>
+			<td>Statistics</td>
+			</tr>
+			<tr>
+			<td>0.3 hours</td>
+			<td>1.2 hours</td>
+			</tr>
+			</table>
+		</td>    
+		<td></td>
+		<td align="center">2</td>        
+	    </tr>  
+            <tr>
+		<td>13/1</td>
+		<td></td> 
+		<td style="background-color:#f29ff2">
+			<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+			<td>C and C++</td>
+			<td>Java</td>
+			</tr>
+			<tr>
+			<td>0.5 hours</td>
+			<td>1 hours</td>
+			</tr>
+			</table>
+		<td></td>
+		<td></td>
+		<td align="center">1</td>
+            </tr>
+            <tr>
+		<td>13/1</td> 
+		<td></td>
+		<td style="background-color:#f2f29f">
+			<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+			<td>DSA</td>
+			<td>OS</td>
+			</tr>
+			<tr>
+			<td>0.5 hours</td>
+			<td>1 hours</td>
+			</tr>
+			</table>
+		</td>
+		<td style="background-color:#f2f29f">
+			<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+			<td>MPMC</td>
+			<td>Web Programming</td>
+			</tr>
+			<tr>
+			<td>0.75 hours</td>
+			<td>0.75 hours</td>
+			</tr>
+			</table>
+		</td>
+		<td style="background-color:#f29ff2">
+			<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+			<td>Quntum Physics</td>
+			<td>Solid State Physics</td>
+			</tr>
+			<tr>
+			<td>0.5 hours</td>
+			<td>1 hours</td>
+			</tr>
+			</table>
+		</td>
+		<td align="center">3</td>
+            </tr>
+        </tbody>
+    </table>
+<h3>Legend</h3>
+<ol>
+<li><p style="background-color:#f2f29f; display:inline">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p> : Theory</li>
+<li><p style="background-color:#f29ff2; display:inline">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p> : Practical</li>
+</ol>
+</body>
+</html>

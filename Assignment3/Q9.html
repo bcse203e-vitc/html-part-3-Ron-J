@@ -1,0 +1,69 @@
+<!-- Build a restaurant menu using a table:
+• Columns: Dish Name, Category (Appetizer, Main Course, Dessert), Ingredients, 
+Price.
+• Use <rowspan> for dishes with similar ingredients across categories.
+• Highlight vegetarian dishes using a specific icon (e.g.,  ).
+Bonus Challenge:
+• Add a column for customer ratings using symbols (e.g., ★). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+</head>
+<body>
+    <table border="1" cellspacing="2" cellpadding="2" align="center">
+        <caption><strong>Restaurant Menu</strong></caption>
+
+        <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Category</th>
+                <th>Ingredients</th>
+                <th>Price</th>
+                <th>Customer Ratings</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Panner Butter Masala &#x1F957</td>
+                <td>Main Course</td>
+                <td rowspan="2">Paneer, Butter, Milk, Chilli Powder, Spices, Flovouring Ingredients</td>
+                <td>Rs. 250</td>
+                <td>★★★★☆</td>
+            </tr>  
+            <tr>
+                <td>Panner Tikka &#x1F957</td>
+                <td>Main Course</td>
+                <td>Rs. 350</td>
+                <td>★★★☆☆</td>
+            </tr> 
+            <tr>
+                <td>Egg Masala</td>
+                <td>Main Course</td>
+                <td>Egg, Milk, Chilli Powder, Spices, Flovouring Ingredients</td>
+                <td>Rs. 600</td>
+
+                <td>★★★★★</td>
+            </tr> 
+            <tr>
+                <td>Gulab Jamun &#x1F957</td>
+                <td>Dessert</td>
+                <td>Rice flour, butter, sugar</td>
+                <td>Rs. 20</td>
+                <td>★★★★☆</td>
+            </tr> 
+            <tr>
+                <td>Gobi Manchurian &#x1F957</td>
+                <td>Appetizer</td>
+                <td>Cauliflower, Spices, Flovouring Ingredients</td>
+                <td>Rs. 150</td>
+                <td>★★☆☆☆</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
