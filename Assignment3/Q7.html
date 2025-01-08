@@ -1,0 +1,77 @@
+<!-- Design a conference timetable:
+• Rows: Time slots.
+• Columns: Room Names.
+• Use <colspan> for combined sessions and <rowspan> for long-duration sessions.
+• Add a legend explaining the color codes for different session types (e.g., keynote, 
+workshop).
+• Include speaker names and session descriptions in tooltips using the title attribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+</head>
+<body>
+  <table border="1" cellspacing="2" cellpadding="2" align="center">
+        <caption><strong>Conference Timetable</strong></caption>
+
+        <thead>
+            <tr>
+		<th></th>
+                <th>MG Auditorium</th>
+                <th>Admin Block 611</th>
+                <th>AB1 211</th>
+                <th>AB3 322</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+		<td>9:00 - 10:00</td>
+                <td rowspan="2" style="background-color:#9ff2f2"><abbr title="Ron J - Session on rise of AI and its applications in modern world">Age of AI</abbr></td>
+                <td></td>
+                <td style="background-color:#f29ff2"><abbr title="Madhan - The demand for Data Visualization in modern world>Data Visualization</abbr></td>
+            </tr>  
+            <tr>
+		<td>10:00 - 11:00</td>
+                <td></td>
+                <td style="background-color:#f2f2f2"><abbr title="Tejasvat R - Web programming using Java"> Java Web Development</abbr></td>
+                <td rowspan="2" style="background-color:#f29ff2"><abbr title="Nikhil B - Using Flask, Django Python Libraries"> Python Web Development </abbr></td>
+            </tr> 
+	    <tr>
+		<td>11:00 - 12:00</td>
+		<td></td>
+                <td style="background-color:#9ff2f2"><abbr title="Bhuvaan- Entrepreneurship principles">Business</abbr></td>
+                <td style="background-color:#f2f29f"><abbr title="Rohit B - skills necessary for public speaking">Public Speaking</abbr></td>
+            </tr>  
+	    <tr>
+		<td>12:00 - 2:00</td>
+                <td colspan="5" align="center">Lunch</td>
+            </tr>  
+	    <tr>
+		<td>2:00 - 3:00</td>
+                <td style="background-color:#f29ff2"><abbr title="Rahul M - Programming Video games with C, C++">Video Game Dev.</abbr></td>
+		<td></td>
+                <td style="background-color:#9ff2f2"><abbr title="Anuraag - Python fundamentals">Learning Python</abbr></td>
+                <td style="background-color:#f2f29f"><abbr title="Aravindan- The different branches in Mathematics">The beauty of Mathematics</abbr></td>
+            </tr> 
+	    <tr> 
+		<td>3:00 - 3:10</td> 
+		<td colspan="5" align="center"> Break </td> 
+	    <tr>
+		<td>3:10 - 4:10</td>
+                <td style="background-color:#9ff2f2"><abbr title="Vittal P - Learning foreign languages quickly">Learning New Languages</abbr></td>
+                <td style="background-color:#f29ff2"><abbr title="Akash P - Using intuition to understand complex Scientific concepts"> Intuitive Science </abbr></td>
+                <td style="background-color:#f2f29f"><abbr title="Anirudh - Tips for working effectively">Work Effeciency</abbr></td>
+            </tr>
+        </tbody>
+    </table>
+<h2>Legend</h2>
+<ul>
+<li><p style="background-color:#9ff2f2; display:inline">&nbsp&nbsp&nbsp</p> - Keynote Session </li>
+<li><p style="background-color:#f29ff2; display:inline">&nbsp&nbsp&nbsp</p> - Workshop </li>
+<li><p style="background-color:#f2f29f; display:inline">&nbsp&nbsp&nbsp</p> - Interactive  Session </li>
+</body>
+</html>
